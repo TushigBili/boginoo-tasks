@@ -3,9 +3,8 @@
     UBUNTU FONT-ийг доорх байдлаар тохируулсан байгаа
     LOBSTER font -ийн татах хэмжээг сонгоно "Select this style"
     Үүний дараа "EMBED" хэсэг байрлах "https://fonts.googleapis.com/css2?family={font}" link доторх css -ийг хуулж тавина
-
+    
 */
-
 
 // UBUNTU FONT
 
@@ -135,6 +134,21 @@
     font-weight: bold;
 }
 
+.fw-100 {
+    font-weight: 100;
+}
+
+.tdl-u {
+    text-decoration-line: underline;
+}
+
+.ti {
+    text-indent: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
 
 /* 
     sass ашиглан 12 -оос 80 -ийн хооронд давтан
@@ -142,3 +156,12 @@
     Жишээ нь:
         className='fs-16 lh-20'
 */
+
+@for $i from 12 to 80 {
+    .fs-#{$i} {
+        font-size: $i + px;
+    }
+    .lh-#{$i} {
+        line-height: $i + px;
+    }
+}

@@ -22,7 +22,7 @@ export const Input = (props) => {
 
     return (
         <div>
-            <input className={`input ${className}`} {...others} />
+            <input className={`input ${className}`} {...others} className='input b-gray0 h-5 w-8 undefined' />
         </div>
     );
 };

@@ -1,1 +1,6 @@
 export * from './home-default'
+export * from './login'
+export * from './register'
+export * from './history'
+export * from './forgot'
+export * from './shortener'
